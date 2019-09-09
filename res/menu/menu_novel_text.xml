@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_novel_marker" android:id="@id/menu_marker" android:title="@string/novel_marker" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_share_white_with_shadow" android:id="@id/menu_share" android:title="@string/share" app:showAsAction="ifRoom" />
+    <item android:id="@id/menu_section" android:title="@string/novel_chapters" app:showAsAction="never" />
+    <item android:id="@id/menu_setting" android:title="@string/novel_settings" app:showAsAction="never" />
+    <item android:id="@id/menu_save_image" android:title="@string/illust_save" app:showAsAction="never" />
+    <item android:id="@id/menu_mute" android:title="@string/mute_settings" app:showAsAction="never" />
+</menu>

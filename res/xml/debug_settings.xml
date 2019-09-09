@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:icon="@null" android:title="開発環境に接続先を向ける" android:key="@string/debug_preference_key_client_development" />
+    <Preference android:icon="@null" android:title="App-Api 接続先" android:key="@string/debug_preference_key_app_api_client" />
+    <Preference android:icon="@null" android:title="OAuth の接続先" android:key="@string/debug_preference_key_oauth_api_client" />
+    <Preference android:icon="@null" android:title="Accounts Api の接続先" android:key="@string/debug_preference_key_accounts_api_client" />
+    <Preference android:icon="@null" android:title="Sketch Api の接続先" android:key="@string/debug_preference_key_sketch_api_client" />
+    <Preference android:icon="@null" android:title="Sketch Live Web Socket の接続先" android:key="@string/debug_preference_key_live_web_socket_client" />
+    <Preference android:icon="@null" android:title="Yufulight Api の接続先" android:key="@string/debug_preference_key_yufulight_api_client" />
+    <CheckBoxPreference android:icon="@null" android:title="Logged in from old app" android:key="@string/preference_key_logged_in_from_old_app" />
+    <CheckBoxPreference android:icon="@null" android:title="Has logged in" android:key="@string/preference_key_has_logged_in" />
+    <CheckBoxPreference android:icon="@null" android:title="ウォークスルー画面をすでに見たか" android:key="@string/preference_key_viewed_walkthrough" android:summary="オフにしてアプリを再起動すると起動時にウォークスルー画面に飛ばされる" />
+    <CheckBoxPreference android:icon="@null" android:title="すき！ボタンを押したことがあるか" android:key="@string/preference_key_first_liked" android:summary="初めて好きボタンを押したときにイラスト詳細画面のポップアップを出したりする" />
+    <CheckBoxPreference android:icon="@null" android:title="「もっとすき！しよう」が表示されたか" android:key="@string/preference_key_viewed_confirm_home_scroll_navigation" android:summary="ホームなどで表示される。「１度でもすき！したことがあるかどうか」がオフかつホームでちょっとスクロールしない表示されないことに注意" />
+    <CheckBoxPreference android:icon="@null" android:title="最初の「すき！」ナビゲーション" android:key="@string/preference_key_viewed_first_like_navigation" android:summary="イラスト詳細画面などで「すき！しよう」ナビゲーションを表示する必要がない状態になったならオンになる" />
+    <CheckBoxPreference android:icon="@null" android:title="Viewed detail like navigation" android:key="@string/preference_key_viewed_detail_like_navigation" />
+    <CheckBoxPreference android:icon="@null" android:title="フォローナビゲーションを見たかどうか" android:key="@string/preference_key_viewed_detail_follow_navigation" android:summary="プロフィール画面で「長押しで非公開フォローできるよ！！」を表示したかどうか" />
+    <Preference android:icon="@null" android:title="評価ダイアログを表示" android:key="@string/debug_preference_key_show_rate_dialog" />
+    <CheckBoxPreference android:icon="@null" android:title="Always show ads" android:key="@string/debug_preference_key_always_show_ads" android:summary="The setting is reflected from the newly opened screen. This setting affects all ads settings" />
+    <CheckBoxPreference android:icon="@null" android:title="常に overlay 広告を表示する" android:key="@string/debug_preference_key_always_show_overlay_ads" android:summary="画面の一番下に張り付いている広告を常に表示する。プレミアム会員でも広告が表示されてほしいときに使う" />
+    <CheckBoxPreference android:icon="@null" android:title="常にグリッド広告を表示する" android:key="@string/debug_preference_key_always_show_inline_ads" android:summary="イラスト一覧の途中に出てくる正方形の広告を常に表示する。プレミアム会員でも広告が表示されてほしいときに使う" />
+    <CheckBoxPreference android:icon="@null" android:title="常に Rectangle 広告を表示する" android:key="@string/debug_preference_key_always_show_rectangle_ads" android:summary="イラスト一覧などの途中に出てくる大きい広告を常に表示する。プレミアム会員でも広告が表示されてほしいときに使う" />
+    <Preference android:icon="@null" android:title="Local DB の「すき！」データを削除" android:key="@string/preference_key_delete_likes" android:summary="Local DB に登録されている「すき！」データを削除する。昔は違ったが、今はマンガのレコメンドのために保存しているデータとなっている。" />
+    <Preference android:icon="@null" android:title="Download KBits per second" android:key="@string/debug_preference_key_download_kbits_per_second" />
+    <Preference android:icon="@null" android:title="Adgeneration グリッド広告のロケーションID" android:key="@string/debug_preference_key_adgeneration_grid_ad_location_id" />
+    <Preference android:icon="@null" android:title="AccountSettingActivity を起動" android:key="@string/debug_preference_key_start_account_setting_activity" android:summary="どのような手順で到達したかによって表示されるものが変わるが、その状態を作るのに結構手間がかかるので、ここで直接起動できるようにしている" />
+    <Preference android:icon="@null" android:title="アクセストークンの更新周期(Millis)" android:key="@string/debug_preference_key_update_access_token_expire_millis" />
+    <Preference android:icon="@null" android:title="アクセストークンを期限切れにする" android:key="@string/debug_preference_key_expire_access_token" android:summary="今すぐ OAuth 認証の処理が走ってほしいときとかに使う" />
+    <Preference android:icon="@null" android:title="First launch time millis" android:key="@string/preference_key_first_launch_time_millis" android:summary="初回起動からどれぐらい時間が経過しているか。初回起動から１週間だけ人気順が試せるなどの挙動を確認するために使う" />
+    <CheckBoxPreference android:icon="@null" android:title="イラスト投稿画面: ガイドラインを表示済み" android:key="@string/preference_key_viewed_upload_guideline_dialog" android:summary="「日本語」以外の言語で、初回のイラスト投稿画面表示のみ" />
+    <CheckBoxPreference android:icon="@null" android:title="小説投稿画面: ガイドラインを表示済み" android:key="@string/preference_key_viewed_novel_upload_guideline_dialog" android:summary="「日本語」以外の言語で、初回の小説投稿画面表示のみ" />
+    <Preference android:icon="@null" android:title="フォロー新着通知をいますぐ表示" android:key="@string/debug_preference_key_start_new_from_following_local_notification_job" android:summary="NewFromFollowingLocalNotificationJob を今すぐ実行して必要であれば通知を表示する" />
+    <CheckBoxPreference android:icon="@null" android:title="ライブ拡大縮小チュートリアルをすでに見たか" android:key="@string/preference_key_shown_live_tutorial_zoom" android:summary="オフにすると、もう一度ライブの拡大縮小チュートリアルが見られるようになる" />
+    <CheckBoxPreference android:icon="@null" android:title="ライブエールチュートリアルをすでに見たか" android:key="@string/preference_key_shown_live_tutorial_yell" android:summary="オフにすると、もう一度ライブのエールチュートリアルが見られるようになる" />
+    <CheckBoxPreference android:icon="@null" android:title="サニティレベルによってオーバレイ広告の背景色を変更する" android:key="@string/debug_preference_key_shown_overlay_advertisement_sanity_level" android:summary="R18=赤, GRAY=灰色, WHITE=白" />
+</PreferenceScreen>

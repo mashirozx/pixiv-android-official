@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/renewal_bg_general" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/mute_work_details_muting" android:layout_above="@id/muted_image_view" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/muted_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/muted_detail_work" android:layout_centerInParent="true" />
+</RelativeLayout>

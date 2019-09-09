@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:tag="layout/activity_comment_list_0" android:background="@color/bg_general_new" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/comment_input_bar">
+            <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar android:theme="@style/PixivTheme.Toolbar" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <jp.pxv.android.view.ContentRecyclerView android:id="@id/content_recycler_view" android:padding="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </FrameLayout>
+            <jp.pxv.android.view.CommentTextCounter android:layout_gravity="bottom|center|right" android:id="@id/comment_text_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <jp.pxv.android.view.InfoOverlayView android:id="@id/info_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <jp.pxv.android.view.CommentInputBar android:id="@id/comment_input_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ad_container" />
+        <include layout="@layout/ad_container" />
+    </RelativeLayout>
+    <include layout="@layout/navigation_view" />
+</androidx.drawerlayout.widget.DrawerLayout>

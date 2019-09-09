@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container_detail_profile" android:tag="layout/view_work_detail_profile_0" android:background="@color/bg_general_new" android:paddingLeft="16.0dip" android:paddingTop="20.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <jp.pxv.android.view.FollowButton android:id="@id/follow_button" android:layout_marginRight="0.0dip" android:layout_alignParentRight="true" android:layout_marginEnd="0.0dip" android:layout_alignParentEnd="true" style="@style/detailsFollowButton" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/follow_button" android:layout_toStartOf="@id/follow_button">
+            <ImageView android:id="@id/profile_image_view" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/profile_user_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginStart="16.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" android:nestedScrollingEnabled="false" app:layout_constraintDimensionRatio="h,3:1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ProgressBar android:id="@id/profile_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="?android:progressBarStyle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="center" android:id="@id/show_profile_text_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/more_button_text" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_profile" android:drawableRight="@drawable/icon_next" android:drawablePadding="8.0dip" android:drawableEnd="@drawable/icon_next" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/bg_item" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+</LinearLayout>

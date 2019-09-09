@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.pxv.android.view.MangaAdsItemView android:id="@id/manga_ad_list_item_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <jp.pxv.android.view.RightTopEdgeAdsBackgroundView android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/PrLabelBackground" />
+    <TextView android:textAppearance="@style/PrLabelText" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/PrLabelTextView" />
+</RelativeLayout>

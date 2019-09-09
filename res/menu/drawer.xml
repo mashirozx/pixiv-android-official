@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_nav_home" android:id="@id/drawer_menu_home" android:title="@string/home" />
+    <item android:icon="@drawable/ic_nav_new_works" android:id="@id/drawer_menu_new_works" android:title="@string/new_works" />
+    <item android:icon="@drawable/ic_nav_search" android:id="@id/drawer_menu_search" android:title="@string/search" />
+    <group android:id="@id/drawer_group_collections">
+        <item android:icon="@drawable/ic_nav_upload" android:id="@id/drawer_menu_upload" android:title="@string/upload_work" />
+        <item android:icon="@drawable/ic_nav_works" android:id="@id/drawer_menu_works" android:title="@string/my_works" />
+        <item android:icon="@drawable/ic_nav_collection" android:id="@id/drawer_menu_collection" android:title="@string/collection" />
+        <item android:icon="@drawable/ic_nav_browsing_history" android:id="@id/drawer_menu_browsing_history" android:title="@string/browsing_history" />
+        <item android:icon="@drawable/ic_nav_marker" android:id="@id/drawer_menu_novel_marker" android:title="@string/novel_marker" />
+    </group>
+    <item android:id="@id/drawer_menu_connections" android:title="@string/connection" app:itemTextColor="@android:color/black">
+        <menu>
+            <item android:icon="@null" android:id="@id/drawer_menu_following" android:title="@string/connection_following" />
+            <item android:icon="@null" android:id="@id/drawer_menu_follower" android:title="@string/connection_follower" />
+            <item android:icon="@null" android:id="@id/drawer_menu_mypixiv" android:title="@string/connection_mypixiv" />
+        </menu>
+    </item>
+    <item android:id="@id/drawer_menu_others" android:title="@string/others" app:itemTextColor="@android:color/black">
+        <menu>
+            <item android:icon="@drawable/ic_chat_bubble_black_24dp" android:id="@id/drawer_menu_feedback" android:title="@string/feedback" />
+            <item android:icon="@drawable/ic_nav_help" android:id="@id/drawer_menu_help" android:title="@string/help" />
+            <item android:icon="@drawable/ic_settings_black_24dp" android:id="@id/drawer_menu_setting" android:title="@string/settings" />
+            <item android:icon="@null" android:id="@id/drawer_menu_mute_setting" android:title="@string/mute_settings" />
+            <item android:icon="@drawable/ic_settings_black_24dp" android:id="@id/drawer_menu_debug_settings" android:visible="false" android:title="デバッグ設定" />
+        </menu>
+    </item>
+</menu>

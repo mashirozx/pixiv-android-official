@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.pxv.android.advertisement.presentation.view.YufulightGridAdView android:id="@id/view_yfl" android:tag="layout/view_grid_ad_switch_0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <jp.pxv.android.advertisement.presentation.view.GridADGAutoRotationView android:id="@id/view_adg" android:tag="layout/view_grid_ad_switch_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

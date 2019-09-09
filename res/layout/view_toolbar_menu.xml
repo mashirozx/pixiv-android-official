@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/view_toolbar_menu_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.pxv.android.view.MenuItemView android:id="@id/menu_home" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="44.0dip" android:layout_height="fill_parent" app:selected="false" app:src="@drawable/ic_home" app:text="@string/home" />
+    <jp.pxv.android.view.MenuItemView android:id="@id/menu_new_works" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="44.0dip" android:layout_height="fill_parent" app:selected="false" app:src="@drawable/ic_menu_new_arrival" app:text="@string/new_works" />
+    <jp.pxv.android.view.MenuItemView android:id="@id/menu_search" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="44.0dip" android:layout_height="fill_parent" app:selected="false" app:src="@drawable/ic_search" app:text="@string/search" />
+</LinearLayout>

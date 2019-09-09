@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/novel_item_container" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cover_image_view" android:layout_width="64.0dip" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:adjustViewBounds="true" android:minHeight="64.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/novel_info_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_toRightOf="@id/cover_image_view" android:layout_toEndOf="@id/cover_image_view">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/renewal_font_black" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/author_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <jp.pxv.android.view.RightTopEdgeAdsBackgroundView android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/PrLabelBackground" />
+        <TextView android:textAppearance="@style/PrLabelText" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/PrLabelTextView" />
+    </RelativeLayout>
+</FrameLayout>

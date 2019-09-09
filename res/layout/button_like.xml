@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/container" android:tag="layout/button_like_0" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff9ca9ac" android:id="@id/total_likes_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/like_image_view" android:padding="6.0dip" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_button_like" android:scaleType="center" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/fall_like_image_view" android:padding="6.0dip" android:visibility="invisible" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_button_liked" android:scaleType="center" android:layout_centerInParent="true" />
+        <View android:id="@id/like_effect_view" android:background="@drawable/like_effect" android:visibility="invisible" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

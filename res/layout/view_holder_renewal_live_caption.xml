@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/container" android:tag="layout/view_holder_renewal_live_caption_0" android:background="@drawable/bg_live_chat" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_image_view" android:tag="binding_1" android:background="@drawable/bg_live_performer_chat_icon" android:padding="2.0dip" android:layout_width="@dimen/live_log_icon_size" android:layout_height="@dimen/live_log_icon_size" />
+        <ImageView android:layout_gravity="end|bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_chat_caption" />
+    </FrameLayout>
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/flexbox" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="16.0dip" app:flexWrap="wrap">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/user_name_text_view" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:lines="1" android:layout_marginEnd="4.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:autoLink="web" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

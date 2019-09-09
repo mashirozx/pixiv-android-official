@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:tag="layout/activity_illust_detail_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/ad_container" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/container" android:background="@color/bg_general" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad_container">
+            <androidx.viewpager.widget.ViewPager android:id="@id/illust_detail_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad_container" />
+        <jp.pxv.android.view.InfoOverlayView android:id="@id/info_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad_container" />
+    </RelativeLayout>
+    <include layout="@layout/navigation_view" />
+</androidx.drawerlayout.widget.DrawerLayout>

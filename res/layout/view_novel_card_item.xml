@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/view_novel_card_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/white" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <jp.pxv.android.view.NovelOutlineView android:id="@id/novel_outline_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/ranking_num_image" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" />
+            </FrameLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip">
+                <ImageView android:id="@id/user_icon_image_view" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/renewal_fg_general" android:ellipsize="end" android:id="@id/bottom_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/like_button" android:layout_toRightOf="@id/user_icon_image_view" android:layout_toStartOf="@id/like_button" android:layout_toEndOf="@id/user_icon_image_view" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/renewal_fg_sub" android:id="@id/user_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/user_icon_image_view" android:layout_below="@id/bottom_title_text_view" android:layout_toEndOf="@id/user_icon_image_view" />
+                <jp.pxv.android.view.LikeButton android:id="@id/like_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:showTotalCount="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <jp.pxv.android.view.OverlayMutedThumbnailView android:id="@id/mute_view" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

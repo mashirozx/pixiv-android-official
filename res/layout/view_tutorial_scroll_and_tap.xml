@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/view_tutorial_scroll_and_tap_0" android:background="@drawable/bg_balloon" android:layout_width="240.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tutorial_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/tutorial_scroll_and_tap" android:layout_centerHorizontal="true" android:lineSpacingExtra="8.0sp" />
+    <ImageView android:id="@id/tutorial_scroll_arrow_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:src="@drawable/tutorial_scroll_top_arrow" android:layout_below="@id/tutorial_text_view" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/tutorial_scroll_hand_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-32.0dip" android:layout_marginBottom="24.0dip" android:src="@drawable/tutorial_scroll_hand" android:layout_below="@id/tutorial_scroll_arrow_image_view" android:layout_centerHorizontal="true" />
+</RelativeLayout>

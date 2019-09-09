@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/view_nps_second_0" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="24.0dip" android:paddingEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/font_color_main" android:id="@id/text_nps_message" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nps_message_2" android:layout_alignParentTop="true" android:labelFor="@id/edit_nps" />
+    <EditText android:textSize="14.0sp" android:textColor="@color/font_color_main" android:gravity="start|center|top" android:id="@id/edit_nps" android:background="@drawable/bg_form" android:padding="16.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="120.0dip" android:hint="@string/nps_message_2_hint" android:layout_below="@id/text_nps_message" />
+    <TextView android:id="@id/reason_count_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/edit_nps" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

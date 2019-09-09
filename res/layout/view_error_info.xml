@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/error_container" android:tag="layout/view_error_info_0" android:background="@color/renewal_bg_general" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/error_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:src="@drawable/error" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/renewal_font_gray" android:gravity="center" android:id="@id/error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_default_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/renewal_font_gray" android:gravity="center" android:id="@id/error_default_message_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/error_default_message" />
+        <TextView android:textColor="@color/renewal_font_gray" android:gravity="center" android:id="@id/error_reload_textview" android:background="@drawable/bg_snackbar_load" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="@string/error_reload" />
+    </LinearLayout>
+    <androidx.appcompat.widget.Toolbar android:theme="@style/UserProfileBarTheme" android:id="@id/tool_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:collapseIcon="@drawable/ic_detail_action_close" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin" />
+</RelativeLayout>

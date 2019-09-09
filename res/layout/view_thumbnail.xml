@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/view_thumbnail_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/overlay_ranking_gradient_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/ranking_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:shadowColor="@android:color/black" android:shadowRadius="10.0" android:layout_marginStart="8.0dip" />
+    <jp.pxv.android.view.LikeButton android:id="@id/like_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/icon_ugoira_image_view" android:background="@color/bg_thumbnail_icon" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_thumbnail_ugoira" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/page_count_text_view" android:background="@color/bg_thumbnail_icon" android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_thumbnail_multiple" android:drawablePadding="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+    <FrameLayout android:id="@id/illust_series_mark_container" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="52.0dip">
+        <ImageView android:id="@id/illust_series_mark_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/yellow_mark_left_top" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/illust_series_mark_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-6.0dip" android:layout_marginTop="-6.0dip" android:text="@string/series" android:rotation="315.0" android:layout_marginStart="-6.0dip" />
+    </FrameLayout>
+</RelativeLayout>

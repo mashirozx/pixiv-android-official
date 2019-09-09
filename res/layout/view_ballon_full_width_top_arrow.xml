@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.pxv.android.view.TriangleView android:layout_gravity="right" android:layout_width="16.0dip" android:layout_height="10.0dip" android:layout_marginRight="48.0dip" android:layout_marginEnd="48.0dip" app:direction="top" app:tintColor="@color/tutorial_balloon" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_balloon" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8.0sp" />
+        <Button android:textColor="@android:color/white" android:id="@id/close_button" android:background="@drawable/bg_balloon_close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/close" />
+    </LinearLayout>
+</LinearLayout>

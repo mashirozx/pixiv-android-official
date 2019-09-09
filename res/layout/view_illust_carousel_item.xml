@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/view_illust_carousel_item_0" android:layout_width="@dimen/carousel_image_size" android:layout_height="@dimen/carousel_image_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.pxv.android.view.ThumbnailView android:id="@id/thumbnail_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/caption_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="32.0dip">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:maxLines="1" android:shadowColor="@android:color/black" android:shadowRadius="6.0" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/user_profile_image_view" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/user_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:maxLines="1" android:shadowColor="@android:color/black" android:shadowRadius="6.0" android:layout_marginStart="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:tag="layout/activity_pixivision_renewal_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/container_catalog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad_container">
+            <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar android:theme="@style/PixivTheme.Toolbar" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll|snap" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.core.widget.NestedScrollView android:id="@id/view_nested_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-6.0dip" android:layout_marginBottom="-6.0dip" style="?android:progressBarStyleHorizontal" />
+                    <WebView android:id="@id/web_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress_bar" android:isScrollContainer="false" />
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <include layout="@layout/ad_container" />
+    </RelativeLayout>
+    <include layout="@layout/navigation_view" />
+</androidx.drawerlayout.widget.DrawerLayout>

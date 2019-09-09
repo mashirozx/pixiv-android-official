@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/view_novel_outline_0" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cover_image_view" android:layout_width="96.0dip" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/novel_series" android:id="@id/series_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/renewal_fg_general" android:ellipsize="end" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/renewal_fg_sub" android:id="@id/text_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tag_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+</LinearLayout>

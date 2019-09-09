@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/activity_novel_editor_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/PixivTheme.Toolbar" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll|snap" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <jp.pxv.android.uploadNovel.presentation.view.PlainPasteEditText android:textSize="14.0sp" android:textColor="@color/bg_novel_series_label" android:textColorHint="@color/transparent_mask_color" android:gravity="top" android:id="@id/edit_text" android:background="@android:color/transparent" android:paddingTop="12.0dip" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lineSpacingExtra="8.0sp" android:inputType="textMultiLine" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </androidx.core.widget.NestedScrollView>
+    <TextView android:textAppearance="@style/InputTextCounterText" android:layout_gravity="end|bottom|center" android:id="@id/character_counter" android:background="@android:color/white" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginEnd="16.0dip" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

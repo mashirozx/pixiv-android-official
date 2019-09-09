@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/renewal_bg_general" />
+    <corners android:radius="@dimen/ranking_cell_radius" />
+    <stroke android:width="1.0dip" android:color="#11000000" />
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/view_holder_search_result_premium_preview_header_footer_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_popular_title" android:drawableLeft="@drawable/ic_premium_crown" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/search_popular_description" />
+    <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/premium_button" android:background="@drawable/bg_button_about_premium_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/premium_about" android:textAllCaps="false" />
+</LinearLayout>

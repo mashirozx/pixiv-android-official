@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/list_item_follow_work_type_selector_0" android:layout_width="fill_parent" android:layout_height="@dimen/segmented_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.pxv.android.view.SegmentedLayout android:id="@id/segmented_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:textSize="@dimen/smart_segmented_layout_text_size" />
+    <ImageView android:id="@id/filter_button" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="19.0dip" android:src="@drawable/ic_search_filter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

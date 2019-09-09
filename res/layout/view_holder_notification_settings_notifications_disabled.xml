@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_holder_notification_settings_notifications_disabled_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/renewal_font_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/settings_please_enable_notifications" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <Button android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/open_notification_settings_button" android:background="@drawable/button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/settings_open_notification_settings" android:textAllCaps="false" />
+</LinearLayout>

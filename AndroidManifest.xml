@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:installLocation="auto" package="jp.pxv.android" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/ic_logo" android:name="jp.pxv.android.Pixiv" android:theme="@style/PixivTheme.NoActionBar">
+        <activity android:name="jp.pxv.android.activity.RoutingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.pxv.android.RootActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.pxv.android.activity.PixivSchemeFilterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="pixiv"/>
+                <data android:scheme="pixiv-inner"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.pxv.android.activity.IntentFilterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.pixiv.net"/>
+                <data android:pathPrefix="/member_illust.php"/>
+                <data android:pathPrefix="/novel/show.php"/>
+                <data android:pathPrefix="/novel/member.php"/>
+                <data android:pathPrefix="/member.php"/>
+                <data android:pathPrefix="/premium.php"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="jp.pxv.android.upload.UploadIllustActivity">
+            <intent-filter android:label="@string/upload_share_to_pixiv">
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.pxv.android.activity.HomeActivity"/>
+        <activity android:name="jp.pxv.android.activity.NewWorksActivity"/>
+        <activity android:name="jp.pxv.android.activity.NovelDetailActivity"/>
+        <activity android:name="jp.pxv.android.activity.SearchFilterActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:name="jp.pxv.android.activity.SearchDurationCustomActivity"/>
+        <activity android:name="jp.pxv.android.activity.RecommendedUserActivity"/>
+        <activity android:name="jp.pxv.android.activity.RelatedUserActivity"/>
+        <activity android:name="jp.pxv.android.activity.PixivisionActivity"/>
+        <activity android:name="jp.pxv.android.activity.PixivisionListActivity"/>
+        <activity android:name="jp.pxv.android.activity.FeedbackActivity"/>
+        <activity android:name="jp.pxv.android.activity.PremiumForRegisteredUserActivity"/>
+        <activity android:name="jp.pxv.android.activity.FollowUserActivity"/>
+        <activity android:name="jp.pxv.android.activity.MyPixivUsersActivity"/>
+        <activity android:name="jp.pxv.android.activity.SearchTopActivity"/>
+        <activity android:name="jp.pxv.android.activity.SearchResultActivity"/>
+        <activity android:name="jp.pxv.android.activity.RankingActivity"/>
+        <activity android:name="jp.pxv.android.activity.RankingSingleActivity"/>
+        <activity android:name="jp.pxv.android.activity.NovelTextActivity"/>
+        <activity android:name="jp.pxv.android.activity.NovelSeriesDetailActivity"/>
+        <activity android:name="jp.pxv.android.activity.PremiumActivity"/>
+        <activity android:name="jp.pxv.android.activity.MyWorkActivity"/>
+        <activity android:name="jp.pxv.android.activity.CollectionActivity"/>
+        <activity android:name="jp.pxv.android.activity.MyFollowingUsersActivity"/>
+        <activity android:name="jp.pxv.android.activity.MyFollowerUsersActivity"/>
+        <activity android:name="jp.pxv.android.activity.BrowsingHistoryActivity"/>
+        <activity android:name="jp.pxv.android.activity.RecommendedFromLikeIllustActivity"/>
+        <activity android:name="jp.pxv.android.activity.WalkThroughActivity" android:screenOrientation="portrait"/>
+        <activity android:name="jp.pxv.android.activity.LoginOrEnterNickNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="jp.pxv.android.activity.CommentListActivity"/>
+        <activity android:name="jp.pxv.android.activity.NovelMarkerActivity"/>
+        <activity android:name="jp.pxv.android.activity.UserProfileActivity"/>
+        <activity android:name="jp.pxv.android.activity.IllustSeriesListActivity"/>
+        <activity android:name="jp.pxv.android.activity.IllustSeriesDetailActivity"/>
+        <activity android:name="jp.pxv.android.activity.UserWorkActivity"/>
+        <activity android:name="jp.pxv.android.activity.IllustDetailPagerActivity" android:theme="@style/PixivTheme.Viewer"/>
+        <activity android:name="jp.pxv.android.activity.IllustDetailSingleActivity" android:theme="@style/PixivTheme.Viewer"/>
+        <activity android:name="jp.pxv.android.activity.FullScreenImageActivity" android:theme="@style/PixivTheme.Viewer"/>
+        <activity android:name="jp.pxv.android.activity.SignUpOrLoginActivity" android:theme="@style/PixivTheme.SignUp"/>
+        <activity android:name="jp.pxv.android.activity.ReLoginActivity" android:theme="@style/PixivTheme.SignUp"/>
+        <activity android:excludeFromRecents="true" android:name="jp.pxv.android.activity.LoginFromAuthenticatorActivity" android:noHistory="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="jp.pxv.android.activity.NicknameRegisterActivity" android:theme="@style/PixivTheme.SignUp" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="jp.pxv.android.activity.WebViewActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="jp.pxv.android.activity.SettingActivity" android:theme="@style/PixivTheme.Setting"/>
+        <activity android:name="jp.pxv.android.activity.AccountSettingActivity" android:screenOrientation="portrait" android:theme="@style/PixivTheme.Setting"/>
+        <activity android:name="jp.pxv.android.activity.ProfileEditActivity" android:screenOrientation="portrait" android:theme="@style/PixivTheme.Setting"/>
+        <activity android:name="jp.pxv.android.activity.WorkspaceEditActivity" android:screenOrientation="portrait" android:theme="@style/PixivTheme.Setting"/>
+        <activity android:name="jp.pxv.android.activity.NotificationSettingsActivity" android:screenOrientation="portrait" android:theme="@style/PixivTheme.Setting"/>
+        <activity android:name="jp.pxv.android.activity.OptoutSettingsActivity" android:screenOrientation="portrait" android:theme="@style/PixivTheme.Setting"/>
+        <activity android:configChanges="orientation|screenSize" android:name="jp.pxv.android.activity.RenewalLiveActivity" android:theme="@style/PixivTheme.Viewer"/>
+        <activity android:name="jp.pxv.android.activity.PointActivity" android:screenOrientation="portrait" android:theme="@style/PixivTheme.Setting"/>
+        <activity android:name="jp.pxv.android.uploadNovel.presentation.activity.NovelEditorActivity" android:screenOrientation="portrait" android:theme="@style/PixivTheme.Setting" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="jp.pxv.android.uploadNovel.presentation.activity.NovelUploadActivity" android:screenOrientation="portrait" android:theme="@style/PixivTheme.Setting"/>
+        <activity android:name="jp.pxv.android.mywork.presentation.activity.NovelDraftListActivity"/>
+        <activity android:name="jp.pxv.android.debug.DebugSettingsActivity" android:theme="@style/PixivTheme.Setting"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="@string/admob_app_id"/>
+        <service android:exported="false" android:name="jp.pxv.android.account.PixivAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:name="jp.pxv.android.upload.UploadIllustService"/>
+        <service android:name="jp.pxv.android.service.ImageDownloadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="jp.pxv.android.service.PixivEmojiIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="jp.pxv.android.activity.LikedUsersActivity"/>
+        <activity android:name="jp.pxv.android.activity.MuteSettingActivity"/>
+        <activity android:name="jp.pxv.android.activity.PopularLiveListActivity"/>
+        <activity android:name="jp.pxv.android.activity.FollowLiveListActivity"/>
+        <activity android:exported="false" android:name="com.amazon.device.ads.DTBActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="intent" android:scheme="amazonmobile"/>
+            </intent-filter>
+        </activity>
+        <service android:name="jp.pxv.android.notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="jp.pxv.android.service.NewFromFollowingLocalNotificationJob">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="jp.pxv.android.newWorks.presentation.job.FollowUserNewWorksNotificationJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="jp.pxv.android.activity.PPointExpirationListActivity" android:screenOrientation="portrait" android:theme="@style/PixivTheme.Setting"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="jp.pxv.android.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="jp.pxv.android.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="jp.pxv.android.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <service android:exported="true" android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.socdm.d.adgeneration.video.ADGPlayerFullscreenActivity"/>
+        <provider android:authorities="jp.pxv.android.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+    </application>
+</manifest>

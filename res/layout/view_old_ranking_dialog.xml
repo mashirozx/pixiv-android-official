@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_old_ranking_dialog_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner android:theme="@style/spinnerStyle" android:id="@id/spinner" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="8.0dip" />
+    <DatePicker android:theme="@style/datePickerStyle" android:id="@id/date_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:calendarViewShown="false" android:datePickerMode="spinner" />
+    <Button android:textColor="@android:color/white" android:id="@id/button" android:background="@drawable/button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/ranking_log_show" />
+</LinearLayout>

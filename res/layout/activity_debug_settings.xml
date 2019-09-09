@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/PixivTheme.Toolbar" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <fragment android:name="jp.pxv.android.debug.DebugSettingsActivity$DebugSettingsFragment" android:id="@id/settings_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include layout="@layout/navigation_view" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_novel_setting_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/novelSettingContainer">
+        <ImageView android:src="@drawable/ic_novel_font_small" style="@style/novelSettingIcon" />
+        <androidx.appcompat.widget.AppCompatSeekBar android:id="@id/font_size_seek_bar" android:padding="16.0dip" android:max="4" android:progress="2" style="@style/novelSettingSeekBar" />
+        <ImageView android:src="@drawable/ic_novel_font_big" style="@style/novelSettingIcon" />
+    </LinearLayout>
+    <LinearLayout style="@style/novelSettingContainer">
+        <ImageView android:src="@drawable/ic_novel_line_tight" style="@style/novelSettingIcon" />
+        <androidx.appcompat.widget.AppCompatSeekBar android:id="@id/line_space_seek_bar" android:padding="16.0dip" android:max="4" android:progress="2" style="@style/novelSettingSeekBar" />
+        <ImageView android:src="@drawable/ic_novel_line_loose" style="@style/novelSettingIcon" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@id/novel_font_spinner" android:background="@drawable/bg_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@id/novel_color_spinner" android:background="@drawable/bg_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

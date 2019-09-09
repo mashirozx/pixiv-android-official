@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/view_adgeneration_rect_item_0" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.pxv.android.advertisement.presentation.view.RectangleAdContainerView android:id="@id/ad_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <jp.pxv.android.view.RightTopEdgeAdsBackgroundView android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/PrLabelBackground" />
+    <TextView android:textAppearance="@style/PrLabelText" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/PrLabelTextView" />
+</RelativeLayout>

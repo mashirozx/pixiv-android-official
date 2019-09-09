@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wrapper_layout" android:tag="layout/view_user_profile_series_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/series_cover_image_view" android:background="@drawable/series_work_border" android:layout_width="240.0dip" android:layout_height="160.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/font_color_main" android:layout_gravity="center" android:id="@id/series_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/font_color_gray" android:id="@id/total_series_count_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/font_color_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/works_count_suffix" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

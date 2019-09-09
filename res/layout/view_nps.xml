@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/view_nps_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewSwitcher android:id="@id/switcher_nps" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/slide_in_right" android:outAnimation="@anim/slide_out_left">
+        <include android:id="@id/nps_first" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/view_nps_first" />
+        <include android:id="@id/nps_second" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/view_nps_second" />
+    </ViewSwitcher>
+</FrameLayout>

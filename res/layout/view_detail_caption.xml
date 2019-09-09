@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.pxv.android.view.DetailCaptionAndTagsView android:id="@id/detail_caption_and_tags_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

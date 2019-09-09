@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/activity_profile_edit_0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/PixivTheme.Toolbar" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/reflect_button" android:layout_below="@id/tool_bar" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/input_container_linear_layout" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/font_color_blue" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/settings_profile_image" />
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="96.0dip" android:layout_height="96.0dip">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/profile_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_settings_profile_image" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/font_error" android:id="@id/profile_image_error_text_view" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/nick_name_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/nick_name_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/signup_nickname_placeholder" android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/webpage_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/webpage_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_profile_webpage_placeholder" android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/twitter_account_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/twitter_account_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_profile_twitter_account_placeholder" android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/font_color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/sex" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:textColor="@color/renewal_font_black" android:id="@id/gender_spinner" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+                    <jp.pxv.android.view.SettingPublicityButton android:layout_gravity="center_vertical" android:id="@id/gender_publicity_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/font_color_blue" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_profile_address" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:textColor="@color/renewal_font_black" android:id="@id/address_spinner" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+                    <jp.pxv.android.view.SettingPublicityButton android:layout_gravity="center_vertical" android:id="@id/region_publicity_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Spinner android:textColor="@color/renewal_font_black" android:id="@id/country_spinner" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/font_color_blue" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/birthday" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/renewal_font_black" android:id="@id/birth_year_text_view" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+                    <jp.pxv.android.view.SettingPublicityButton android:layout_gravity="center_vertical" android:id="@id/birth_year_publicity_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/renewal_font_black" android:id="@id/birth_day_text_view" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+                    <jp.pxv.android.view.SettingPublicityButton android:layout_gravity="center_vertical" android:id="@id/birth_day_publicity_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/font_error" android:id="@id/birth_error_text_view" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/font_color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_profile_job" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:textColor="@color/renewal_font_black" android:id="@id/job_spinner" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+                    <jp.pxv.android.view.SettingPublicityButton android:layout_gravity="center_vertical" android:id="@id/job_publicity_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/font_error" android:id="@id/job_error_text_view" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/font_color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_profile_comment_placeholder" />
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                    <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:gravity="top" android:id="@id/comment_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="3" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/pawoo_publicity_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/font_color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/app_name_pawoo" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/renewal_font_black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_pawoo" android:layout_weight="1.0" />
+                    <jp.pxv.android.view.SettingPawooPublicityButton android:layout_gravity="end" android:id="@id/pawoo_publicity_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/renewal_font_gray" android:textColorLink="@color/primary" android:id="@id/pawoo_info_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_pawoo_info" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:enabled="false" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/reflect_button" android:background="@drawable/button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/settings_update_profile" android:layout_alignParentBottom="true" />
+    <requestFocus />
+    <jp.pxv.android.view.InfoOverlayView android:id="@id/info_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

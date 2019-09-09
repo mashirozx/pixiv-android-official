@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="illust_manga_novel">
+        <item>@string/illust</item>
+        <item>@string/manga</item>
+        <item>@string/novel</item>
+    </string-array>
+    <string-array name="illustmanga_novel">
+        <item>@string/illustmanga</item>
+        <item>@string/novel</item>
+    </string-array>
+    <string-array name="illustmanga_novel_user">
+        <item>@string/illustmanga</item>
+        <item>@string/novel</item>
+        <item>@string/user</item>
+    </string-array>
+    <string-array name="novel_background_names">
+        <item>@string/novel_background_white</item>
+        <item>@string/novel_background_black</item>
+        <item>@string/novel_background_sepia</item>
+    </string-array>
+    <string-array name="novel_font_names">
+        <item>@string/novel_font_default</item>
+        <item>@string/novel_font_gothic</item>
+        <item>@string/novel_font_mincho</item>
+    </string-array>
+    <string-array name="public_private">
+        <item>@string/common_public</item>
+        <item>@string/common_private</item>
+    </string-array>
+    <string-array name="search_order">
+        <item>@string/search_order_new</item>
+        <item>@string/search_order_popular</item>
+        <item>@string/search_order_old</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/activity_workspace_edit_0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/PixivTheme.Toolbar" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/reflect_button" android:layout_below="@id/tool_bar" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/input_container_linear_layout" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/pc_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_pc_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/monitor_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_monitor_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/tool_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_tool_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/scanner_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_scanner_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/tablet_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_tablet_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/mouse_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_mouse_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/printer_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_printer_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/desktop_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_desktop_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/music_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_music_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/desk_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_desk_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/chair_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_chair_placeholder" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:gravity="top" android:id="@id/comment_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_workspace_comment_placeholder" android:minLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:enabled="false" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/reflect_button" android:background="@drawable/button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/settings_update_profile" android:layout_alignParentBottom="true" />
+    <requestFocus />
+    <jp.pxv.android.view.InfoOverlayView android:id="@id/info_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

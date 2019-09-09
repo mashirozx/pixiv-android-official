@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_detail_layout" android:tag="layout/detail_bottom_bar_view_0" android:background="@color/bg_general_new" android:paddingTop="@dimen/actionbar_space" android:paddingBottom="@dimen/actionbar_space" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/hide_work_caption_button" android:background="@android:color/transparent" android:paddingLeft="16.0dip" android:paddingTop="4.0dip" android:paddingRight="0.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/action_detail_rev" android:paddingStart="16.0dip" android:paddingEnd="0.0dip" />
+    <ImageView android:id="@id/user_profile_image_view" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/hide_work_caption_button" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/hide_work_caption_button" />
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/user_profile_image_view" android:layout_centerVertical="true" android:layout_toEndOf="@id/user_profile_image_view">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/renewal_font_black" android:id="@id/title_text_view" android:paddingLeft="0.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="16.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/user_name_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+</RelativeLayout>

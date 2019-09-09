@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/detail_illust_series_view_0" android:background="@color/bg_general_new" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/next_illust_wrapper_layout" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/novel_series" android:id="@id/illust_series_title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/illust_series_title_text_view">
+            <ImageView android:id="@id/next_illust_image_view" android:layout_width="@dimen/next_illust_image_size" android:layout_height="@dimen/next_illust_image_size" android:scaleType="centerCrop" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginStart="8.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/illust_detail_text_color" android:id="@id/next_illust_series_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:id="@id/next_illust_title_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/next_illust_series_mark_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_read_more_work" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/detail_series_work_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:gravity="center" android:id="@id/previous_illust_button" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/series_previous" android:layout_weight="1.0" />
+        <TextView android:background="@color/series_work_border" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:gravity="center" android:id="@id/go_to_series_detail_button" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/series_list" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

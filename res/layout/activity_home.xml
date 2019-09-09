@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:tag="layout/activity_home_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad_container">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar android:theme="@style/PixivTheme.Toolbar" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll|snap" />
+                <jp.pxv.android.view.SegmentedLayout android:id="@id/segmented_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/segmented_layout_height" app:fillLayout="true" app:textSize="@dimen/segmented_layout_text_size" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:id="@id/segment_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <TextView android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/like_more_text_view" android:background="#88000000" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" app:layout_anchor="@id/segment_fragment_container" app:layout_anchorGravity="top" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad_container">
+            <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <jp.pxv.android.view.TutorialScrollNavigationView android:id="@id/tutorial_scroll_and_tap_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <include layout="@layout/ad_container" />
+    </RelativeLayout>
+    <include layout="@layout/navigation_view" />
+</androidx.drawerlayout.widget.DrawerLayout>

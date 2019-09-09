@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.pxv.android.view.LiveModuleView android:id="@id/live_module_view" android:tag="layout/view_holder_horizontal_layout_live_0" android:layout_width="@dimen/horizontal_live_module_width" android:layout_height="@dimen/horizontal_live_module_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

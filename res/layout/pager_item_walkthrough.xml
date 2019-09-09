@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/pager_item_walkthrough_0" android:background="#9a000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/logo_area" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/text_view" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_weight="7.0">
+        <ImageView android:gravity="center" android:id="@id/image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="64.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="0.0dip" android:lineSpacingExtra="16.0sp" android:textAlignment="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/logo_area" app:layout_constraintVertical_weight="3.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

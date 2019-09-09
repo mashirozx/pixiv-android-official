@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/activity_full_screen_image_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ad_container" />
+    <jp.pxv.android.view.ImageViewPager android:id="@id/illust_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad_container" />
+    <androidx.appcompat.widget.Toolbar android:theme="@style/UserProfileBarTheme" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+</RelativeLayout>

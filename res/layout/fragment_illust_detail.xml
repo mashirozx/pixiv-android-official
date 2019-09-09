@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_illust_detail_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/illust_detail_view" android:tag="binding_1" android:background="@color/bg_general_new" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/comment_input_bar">
+        <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <jp.pxv.android.view.InfoOverlayView android:id="@id/info_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/page_number_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:shadowColor="@android:color/black" android:shadowDy="1.0" android:shadowRadius="2.0" app:layout_anchor="@id/container" app:layout_anchorGravity="center_horizontal" />
+        <View android:id="@id/illust_mask_view" android:background="#55000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/over_work_detail_binding" layout="@layout/over_work_detail_container" />
+        <androidx.core.widget.NestedScrollView android:id="@id/illust_caption_view" android:background="@color/bg_work_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_peekHeight="@dimen/renewal_detail_bar_height" app:layout_behavior="jp.pxv.android.behavior.WorkaroundBottomSheetBehavior">
+            <LinearLayout android:orientation="vertical" android:background="@color/bg_general_new" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <jp.pxv.android.view.DetailBottomBarView android:id="@id/detail_bottom_bar_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <jp.pxv.android.view.DetailCaptionAndTagsView android:id="@id/detail_caption_and_tags_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <jp.pxv.android.view.DetailIllustSeriesView android:id="@id/detail_illust_series_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <jp.pxv.android.view.DetailProfileWorksView android:id="@id/detail_profile_works_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <jp.pxv.android.view.DetailCommentsView android:id="@id/detail_comments_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <androidx.appcompat.widget.Toolbar android:theme="@style/UserProfileBarTheme" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true" app:collapseIcon="@drawable/ic_detail_action_close" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin" />
+        <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_anchorGravity="end|center|top">
+            <jp.pxv.android.view.BalloonView android:layout_gravity="end" android:id="@id/balloon_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" app:layout_anchor="@id/floating_like_button" />
+            <jp.pxv.android.view.FloatingLikeButton android:layout_gravity="end" android:id="@id/floating_like_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/ic_fab_like" android:layout_marginEnd="16.0dip" app:backgroundTint="@color/fab_background_tint" />
+        </LinearLayout>
+        <jp.pxv.android.view.CommentTextCounter android:layout_gravity="bottom|center|right" android:id="@id/comment_text_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <jp.pxv.android.view.CommentInputBar android:id="@id/comment_input_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

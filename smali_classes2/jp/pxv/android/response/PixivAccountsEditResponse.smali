@@ -1,0 +1,26 @@
+.class public final Ljp/pxv/android/response/PixivAccountsEditResponse;
+.super Ljava/lang/Object;
+.source "PixivAccountsEditResponse.java"
+
+
+# instance fields
+.field public accountEditResult:Ljp/pxv/android/model/PixivAccountsEditResult;
+    .annotation runtime Lcom/google/gson/a/c;
+        a = "body"
+    .end annotation
+.end field
+
+.field public error:Z
+
+.field public message:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

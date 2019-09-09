@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/view_novel_series_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/renewal_detail_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/series_separator_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/series_navigation_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/series_previous_view" android:background="?selectableItemBackground" android:padding="16.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center_horizontal" android:id="@id/previous_label_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/novel_series_previous" />
+            <ImageView android:id="@id/previous_cover_image_view" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:adjustViewBounds="true" />
+            <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/previous_title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+        </LinearLayout>
+        <View android:id="@id/series_separator_vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/series_next_view" android:background="?selectableItemBackground" android:padding="16.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center_horizontal" android:id="@id/next_label_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/novel_series_next" />
+            <ImageView android:id="@id/next_cover_image_view" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:adjustViewBounds="true" />
+            <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/next_title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

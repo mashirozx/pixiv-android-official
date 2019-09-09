@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_mute_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_mute_setting_reflection">
+        <include layout="@layout/fragment_base_recycler" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/view_mute_setting_reflection" android:background="@color/renewal_bg_general" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@android:color/white" android:id="@id/button_mute_setting_reflection" android:background="@drawable/bg_upload_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mute_setting_submit" />
+    </RelativeLayout>
+</RelativeLayout>

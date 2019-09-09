@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:icon="@null" android:title="@string/settings" android:key="setting">
+        <Preference android:icon="@null" android:title="@string/settings_account" android:key="@string/preference_key_setting_account" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/settings_profile" android:key="@string/preference_key_setting_profile" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/settings_workspace" android:key="@string/preference_key_setting_workspace" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/settings_notification" android:key="@string/preference_key_notification_notify" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/point_name" android:key="@string/preference_key_setting_point" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/settings_optout" android:key="@string/preference_key_setting_optout" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/settings_register_premium" android:key="@string/preference_key_setting_register_premium" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/logout" android:key="@string/preference_key_setting_logout" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:icon="@null" android:title="@string/support" android:key="support">
+        <Preference android:icon="@null" android:title="@string/help" android:key="@string/preference_key_support_help" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/terms" android:key="@string/preference_key_support_terms" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/privacy_policy" android:key="@string/preference_key_support_privacy_policy" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/copy_right" android:key="@string/preference_key_support_copyright" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/act_on_specified_commercial_transactions" android:key="@string/preference_key_support_law" app:iconSpaceReserved="false" />
+        <Preference android:icon="@null" android:title="@string/point_label_act_on_settlement" android:key="@string/preference_key_act_on_settlement" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

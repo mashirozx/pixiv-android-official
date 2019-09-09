@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <jp.pxv.android.advertisement.presentation.view.YufulightRectangleAdView android:id="@id/view_yfl" android:tag="layout/view_rectangle_ad_switch_0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <jp.pxv.android.advertisement.presentation.view.RectangleADGAutoRotationView android:id="@id/view_adg" android:tag="layout/view_rectangle_ad_switch_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <jp.pxv.android.advertisement.presentation.view.RectangleAdgTamView android:id="@id/view_tam" android:tag="layout/view_rectangle_ad_switch_2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

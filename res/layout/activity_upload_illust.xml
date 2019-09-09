@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/activity_upload_illust_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/PixivTheme.Toolbar" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="true" app:layout_scrollFlags="enterAlways|scroll|snap" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ffff4500" android:gravity="center_horizontal" android:background="#ffffe4e1" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/upload_update_information" />
+                <LinearLayout android:orientation="vertical" android:background="@android:color/black" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <androidx.viewpager.widget.ViewPager android:id="@id/upload_illust_viewpager" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                            <requestFocus />
+                        </androidx.viewpager.widget.ViewPager>
+                        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/count_page" android:background="@drawable/shape_count_page_upload" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_edit_illust" android:background="#dd808080" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:text="@string/upload_edit_button" android:layout_weight="1.0" />
+                        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/button_delete_illust" android:background="#dd808080" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@string/upload_delete_button" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/upload_input_layout" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <TextView android:textAppearance="@style/UploadContentPropertyLabelText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/illust_title" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:textAppearance="@style/InputTextCounterText" android:id="@id/upload_title_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <EditText android:id="@id/enter_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/upload_illust_hint_title" android:maxLength="@integer/illust_title_max_length" style="@style/UploadContentPropertyInput.SingleLine" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <TextView android:textAppearance="@style/UploadContentPropertyLabelText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/illust_caption" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:textAppearance="@style/InputTextCounterText" android:id="@id/upload_caption_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <EditText android:id="@id/enter_caption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/upload_illust_hint_caption" android:maxLength="@integer/illust_caption_max_length" style="@style/UploadContentPropertyInput.MultiLine" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <TextView android:textAppearance="@style/UploadContentPropertyLabelText" android:id="@id/textview_upload_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/illust_tags" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <TextView android:layout_marginLeft="8.0dip" android:text="@string/upload_required_item" android:layout_toRightOf="@id/textview_upload_tag" android:layout_centerVertical="true" style="@style/RequireLabel" />
+                        <TextView android:textAppearance="@style/InputTextCounterText" android:id="@id/upload_tag_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <jp.pxv.android.upload.presentation.view.WorkTagEditView android:id="@id/work_tag_edit_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textAppearance="@style/UploadContentPropertyLabelText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/upload_illust_kind" />
+                    <jp.pxv.android.view.RelativeRadioGroup android:id="@id/radio_illust_kind" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_illust_kind_illust" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/upload_illust_kind_illust" />
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_illust_kind_manga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_illust_kind_manga" />
+                    </jp.pxv.android.view.RelativeRadioGroup>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <TextView android:textAppearance="@style/UploadContentPropertyLabelText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_illust_limit" />
+                        <TextView android:layout_gravity="center_vertical" android:layout_marginLeft="8.0dip" android:text="@string/upload_required_item" style="@style/RequireLabel" />
+                    </LinearLayout>
+                    <jp.pxv.android.view.RelativeRadioGroup android:id="@id/radio_age_limit" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_age_limit_all_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_age_limit_all_age" />
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_age_limit_r18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_age_limit_r18" />
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_age_limit_r18g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_age_limit_r18g" />
+                    </jp.pxv.android.view.RelativeRadioGroup>
+                    <TextView android:textAppearance="@style/UploadContentPropertyLabelText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/upload_illust_publicity" />
+                    <jp.pxv.android.view.RelativeRadioGroup android:id="@id/radio_publicity" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_publicity_public" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/upload_publicity_public" />
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_publicity_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_publicity_friend" />
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_publicity_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_publicity_private" />
+                    </jp.pxv.android.view.RelativeRadioGroup>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <TextView android:textAppearance="@style/UploadContentPropertyLabelText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_illust_expression" />
+                        <TextView android:layout_gravity="center_vertical" android:layout_marginLeft="8.0dip" android:text="@string/upload_required_item" style="@style/RequireLabel" />
+                    </LinearLayout>
+                    <jp.pxv.android.view.RelativeRadioGroup android:id="@id/radio_sexual_expression" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_sexual_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_illust_sexual_none" />
+                        <RadioButton android:textAppearance="@style/UploadContentRadioButtonText" android:id="@id/radio_sexual_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_illust_sexual_yes" />
+                    </jp.pxv.android.view.RelativeRadioGroup>
+                    <Button android:textColor="@android:color/white" android:id="@id/button_submit" android:background="@drawable/button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/upload_submit" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <jp.pxv.android.upload.EditImageView android:id="@id/edit_image" android:background="@android:color/black" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/buttons_crop" android:background="@color/bg_illust_edit_action" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_rotation" android:paddingTop="12.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/upload_edit_rotate" android:drawableTop="@drawable/button_rotation" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_save" android:paddingTop="12.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/upload_edit_save" android:drawableTop="@drawable/button_save" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/buttons_crop">
+            <com.edmodo.cropper.CropImageView android:id="@id/crop_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:guidelines="onTouch" xmlns:custom="http://schemas.android.com/apk/res-auto" />
+        </FrameLayout>
+    </jp.pxv.android.upload.EditImageView>
+</FrameLayout>

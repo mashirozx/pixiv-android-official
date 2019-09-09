@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:tag="layout/view_search_query_editor_0" android:background="@drawable/bg_edit_text" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:fillViewport="true" android:layout_marginEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/search_query_editor_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginStart="8.0dip">
+        <EditText android:theme="@style/editTextColorControl" android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:textColorHint="@color/renewal_font_gray" android:layout_gravity="center_vertical" android:id="@id/search_query_edit_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_prompt" android:inputType="text" android:imeOptions="actionSearch" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/fixed_search_query_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</HorizontalScrollView>

@@ -1,0 +1,13 @@
+.class public interface abstract Lcom/google/android/gms/internal/ads/zzpi;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract cancelLoad()V
+.end method
+
+.method public abstract zzfe()Z
+.end method
+
+.method public abstract zzff()V
+.end method

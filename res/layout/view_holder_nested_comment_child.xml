@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.pxv.android.view.CommentItemView android:id="@id/comment_item_view" android:tag="layout/view_holder_nested_comment_child_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/nested_comment_child_item_margin_left" android:layout_marginStart="@dimen/nested_comment_child_item_margin_left"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

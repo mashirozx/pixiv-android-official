@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/view_renewal_live_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView android:id="@id/simple_exo_player_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="fill" app:surface_type="texture_view" app:use_controller="false" />
+    <ImageView android:id="@id/thumbnail_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:tag="binding_1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+    <ImageView android:layout_gravity="center" android:id="@id/need_refresh_view" android:tag="binding_2" android:background="@drawable/bg_live_reload" android:padding="4.0dip" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_live_reload" android:tint="@android:color/white" />
+    <FrameLayout android:tag="binding_3" android:background="@color/bg_search_input" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_mute" android:tint="@android:color/black" android:alpha="0.2" />
+    </FrameLayout>
+</FrameLayout>

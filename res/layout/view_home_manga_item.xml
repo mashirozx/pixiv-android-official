@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/view_container" android:tag="layout/view_home_manga_item_0" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/thumbnail_view_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <jp.pxv.android.view.ThumbnailView android:id="@id/thumbnail_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="h,8:10" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/description_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/thumbnail_view_wrapper" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/renewal_font_black" android:id="@id/title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/tag_text_color" android:id="@id/tags_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/renewal_font_light_gray" android:layout_gravity="center_vertical" android:id="@id/like_count_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:drawableLeft="@drawable/ic_manga_like" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+</RelativeLayout>

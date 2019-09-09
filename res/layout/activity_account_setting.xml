@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_relative_layout" android:tag="layout/activity_account_setting_0" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/PixivTheme.Toolbar" android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/tool_bar">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/mail_text_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/mail_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_mail_address" android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/font_color_white" android:layout_gravity="center_vertical" android:id="@id/mail_confirm_or_required_badge_text_view" android:background="@drawable/button_primary" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_required_item" android:onClick="onConfirmOrRequiredBadgeTextViewClick" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/pixiv_id_text_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/pixiv_id_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/sign_up_pixiv_id" android:inputType="textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/font_color_white" android:layout_gravity="center_vertical" android:id="@id/pixiv_id_required_badge_text_view" android:background="@drawable/button_primary" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_required_item" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/password_text_input_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:hintAnimationEnabled="false">
+                <EditText android:textSize="16.0sp" android:textColor="@color/renewal_font_gray" android:id="@id/password_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settings_new_password" android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/font_color_white" android:layout_gravity="center_vertical" android:id="@id/password_required_badge_text_view" android:background="@drawable/button_primary" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upload_required_item" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:gravity="center" android:id="@id/doesnt_have_email_text_view" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_account_doesnt_have_email" android:onClick="onDoesntHaveEmailTextViewClick" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:layout_gravity="right" android:id="@id/advanced_setting_text_view" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_advanced" android:onClick="onClickAdvancedSettingTextView" />
+    </LinearLayout>
+    <Button android:enabled="false" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/reflect_button" android:background="@drawable/button_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/settings_update_account" android:layout_alignParentBottom="true" android:onClick="onReflectButtonClick" />
+    <requestFocus />
+    <jp.pxv.android.view.InfoOverlayView android:id="@id/info_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>
